@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Employee Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Employee Form</h1>
+  <div class="message" id="message"></div>
+
+  <form id="employeeForm">
+    <input type="text" id="name" placeholder="Name" required />
+    <input type="number" id="age" placeholder="Age" required />
+    <input type="text" id="address" placeholder="Address" required />
+    <input type="text" id="department" placeholder="Department" required />
+    <input type="number" id="salary" placeholder="Salary" required />
+    <select id="maritalStatus" required>
+      <option value="">Select Marital Status</option>
+      <option value="Single">Single</option>
+      <option value="Married">Married</option>
+    </select>
+    <input type="text" id="profession" placeholder="Profession Badge" required />
+    <input type="url" id="profilePic" placeholder="Profile Picture URL" required />
+    <button type="submit">Add Employee</button>
+  </form>
+
+  <div class="employee-list" id="employeeList"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
